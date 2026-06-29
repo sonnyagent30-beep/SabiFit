@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-indigo: #1E2A78;
+  --color-indigo-light: #2D3F99;
+  --color-indigo-dark: #141D55;
+  --color-clay: #C76851;
+  --color-clay-light: #D4836A;
+  --color-bg: #F7F8FC;
+  --color-surface: #FFFFFF;
+  --color-text: #1A1A2E;
+  --color-text-light: #6B7280;
+  --color-border: #E5E7EB;
+  --color-success: #10B981;
+  --color-error: #EF4444;
+
+  /* Typography */
+  --font-family-sans: var(--font-poppins), system-ui, sans-serif;
+
+
+  /* Shadows */
+  --shadow-card: 0 2px 16px rgba(30, 42, 120, 0.08);
+  --shadow-button: 0 2px 8px rgba(30, 42, 120, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-poppins), system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--color-indigo);
+  outline-offset: 2px;
+}
+
+/* Input number spinner hide */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
